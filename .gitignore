@@ -1,0 +1,10 @@
+.classpath
+.idea/
+.project
+.settings/
+*.iml
+web-app/WEB-INF
+target/
+
+.eprj
+/*.log
