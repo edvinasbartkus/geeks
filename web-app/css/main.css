@@ -19,7 +19,7 @@ body {
     font-weight: normal;
 }
 
-h1 {
+h1, h2 {
     font-family: GraublauWeb, 'Helvetica Neue', Helvetica, Geneva, sans-serif;
     font-size: 32px;
     line-height: 1.3em;
@@ -109,7 +109,7 @@ aside > section > h2 {
     margin-bottom: 10px;
 }
 aside > section > h2 > img {
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
 aside > section input[type='text'] {
@@ -154,21 +154,43 @@ input:focus, select:focus, textarea:focus {
 .articles li {
     list-style: none;
     clear: both;
-    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.articles h2 a {
+	font-family: GraublauWeb, 'Helvetica Neue', Helvetica, Geneva, sans-serif;
+	text-decoration: none;
 }
 
 .articles .author {
-    margin-top: 10px;
-    vertical-align: middle;
-    margin-bottom: 10px;
+	float: right;
+	border-left: 1px solid #ccc;
+	width: 200px;
+	min-height: 30px;
+	padding-left: 10px;
 }
 
 .articles .author img {
     vertical-align: bottom;
+		float: left;
+		margin-right: 8px;
+}
+
+.articles .author .name {
+	font-size: 18px;
+}
+
+.articles .author .control-buttons {
+	margin-top: 25px;
 }
 
 .articles .synopsis {
-    font-size: 16px;
+	font-size: 16px;
+}
+
+.articles .content {
+	width: 670px;
+	float: left;
 }
 
 .article-meta {

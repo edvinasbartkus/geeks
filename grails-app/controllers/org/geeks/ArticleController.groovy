@@ -32,6 +32,8 @@ class ArticleController {
   @Secured(['ROLE_ADMIN'])
   def form = {
     def article = params.long("id") ? Article.get(params.long("id")) : new Article(params)
+		if(!article.author)
+			article.author = User.get(springSecurityService.principal.id)
 
     def categories = Category.withCriteria {
       eq("enabled", true)
